@@ -28,10 +28,10 @@ const plugin: JupyterFrontEndPlugin<void> = {
     const hubUser = paths.urls.hubUser || '';
     //const hubServerName = paths.urls.hubServerName || '';
     
-    var tgtUrl = '';
+    //var tgtUrl = '';
     var deactivateFlag = false;
     const helpUrl = 'https://arc.ucar.edu/knowledge_base/70549913';
-    //const mainUrl = 'https://jupyterhub.hpc.ucar.edu';
+    const mainUrl = 'https://jupyterhub.hpc.ucar.edu';
     var hubControlPanelUrl = '';
     // var serversUrl = '';
 
@@ -57,7 +57,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
         console.log(
           `ncar:menu has been called ${args['origin']}`
         );
-        window.open(tgtUrl,'_blank');
+        window.open(mainUrl,'_blank');
       },
     });
 

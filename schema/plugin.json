@@ -5,7 +5,7 @@
     "main": [
       {
         "id": "ncar-menu",
-        "label": "NCAR HPC",
+        "label": "NCAR",
         "rank": 80,
         "items": [
           {
@@ -18,6 +18,12 @@
             "command": "ncar:ctrl",
             "args": {
               "origin": "from the menu"
+            }
+          },
+          {
+            "command": "ncar:help",
+            "args": {
+              "origin":"from the menu"
             }
           }
         ]
