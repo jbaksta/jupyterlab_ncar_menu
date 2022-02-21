@@ -1,0 +1,29 @@
+{
+  "title": "NCAR HPC Menu",
+  "description": "NCAR HPC Menu",
+  "jupyter.lab.menus": {
+    "main": [
+      {
+        "id": "ncar-menu",
+        "label": "NCAR HPC",
+        "rank": 80,
+        "items": [
+          {
+            "command": "ncar:main",
+            "args": {
+              "origin": "from the menu"
+            }
+          },
+          {
+            "command": "ncar:ctrl",
+            "args": {
+              "origin": "from the menu"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "additionalProperties": false,
+  "type": "object"
+}
