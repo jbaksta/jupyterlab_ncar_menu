@@ -51,8 +51,8 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     var command = 'ncar:main';
     commands.addCommand(command, {
-      label: 'NCAR HPC JupyterHub Main Page',
-      caption: 'NCAR HPC JupyterHub Main Page',
+      label: 'JupyterHub Main Page',
+      caption: 'JupyterHub Main Page',
       execute: (args: any) => {
         console.log(
           `ncar:menu has been called ${args['origin']}`
@@ -61,7 +61,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       },
     });
 
-    const category = 'NCAR Menu';
+    const category = 'NCAR';
     palette.addItem({
       command,
       category,
@@ -88,8 +88,8 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     command = 'ncar:help';
     commands.addCommand(command,{
-      label: 'NCAR JupyterHub Help',
-      caption: 'NCAR JupyterHub Help',
+      label: 'Help',
+      caption: 'Help',
       execute: (args: any) => {
         console.log(`ncar:help has been called ${args['origin']}`);
         window.open(helpUrl,'_blank');

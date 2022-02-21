@@ -1,6 +1,6 @@
 {
-  "title": "NCAR HPC Menu",
-  "description": "NCAR HPC Menu",
+  "title": "NCAR Menu",
+  "description": "NCAR Menu",
   "jupyter.lab.menus": {
     "main": [
       {
