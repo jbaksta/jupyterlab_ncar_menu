@@ -27,6 +27,7 @@
             }
           },
           {
+            "type": "submenu",
             "id": "ncar-submenu",
             "label": "Submenu",
             "rank": 100,
