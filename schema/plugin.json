@@ -25,6 +25,20 @@
             "args": {
               "origin":"from the menu"
             }
+          },
+          {
+            "id": "ncar-submenu",
+            "label": "Submenu",
+            "rank": 100,
+            "items": [
+              {
+                "command": "ncar:empty",
+                "args": {
+                  "origin": "From the menu"
+                }
+              }
+            ]
+           }
           }
         ]
       }
