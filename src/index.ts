@@ -100,6 +100,25 @@ const plugin: JupyterFrontEndPlugin<void> = {
       command,category,args: { origin: 'from the palette'}
     });
 
+    command = 'ncar:geocat';
+    commands.addCommand(command,{
+      label: 'NCAR GeoCAT',
+      caption: 'NCAR GeoCAT',
+      execute: (args: any) => {
+        window.open('https://geocat.ucar.edu/','_blank');
+      }
+    });
+    palette.addItem({command,category,args: {origin: 'from the palette'}});
+
+    command = 'ncar:pythia';
+    commands.addCommand(command,{
+      label: 'Project Pythia',
+      caption: 'Project Pythia',
+      execute: (args: any) => {
+        window.open('http://projectpythia.org/','_blank');
+      }
+    })
+    palette.addItem({command,category,args: {origin: 'from the palette'}})
 
   }
 };
