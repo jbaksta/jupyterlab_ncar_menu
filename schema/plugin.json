@@ -28,17 +28,18 @@
           },
           {
             "type": "submenu",
-            "id": "ncar-submenu",
-            "label": "Submenu",
-            "rank": 100,
-            "items": [
-              {
-                "command": "ncar:empty",
-                "args": {
-                  "origin": "From the menu"
+            "submenu": {
+              "id": "ncar-submenu",
+              "label": "Submenu",
+              "items": [
+                {
+                  "command": "ncar:empty",
+                  "args": {
+                    "origin": "From the menu"
+                  }
                 }
-              }
-            ]
+             ]
+            }
           }
         ]
       }
