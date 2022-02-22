@@ -51,8 +51,8 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     var command = 'ncar:main';
     commands.addCommand(command, {
-      label: 'JupyterHub Main Page',
-      caption: 'JupyterHub Main Page',
+      label: 'JupyterHub Portal',
+      caption: 'JupyterHub Portal',
       execute: (args: any) => {
         console.log(
           `ncar:menu has been called ${args['origin']}`
@@ -70,8 +70,8 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     command = 'ncar:ctrl';
     commands.addCommand(command,{ 
-      label: 'Control Panel',
-      caption: 'Control Panel',
+      label: 'My Servers',
+      caption: 'My Servers',
       execute: (args: any) => {
         console.log(
           `ncar:menu has been called ${args['origin']}`
@@ -88,8 +88,8 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     command = 'ncar:help';
     commands.addCommand(command,{
-      label: 'Help',
-      caption: 'Help',
+      label: 'NCAR Help',
+      caption: 'NCAR Help',
       execute: (args: any) => {
         console.log(`ncar:help has been called ${args['origin']}`);
         window.open(helpUrl,'_blank');
