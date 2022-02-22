@@ -6,7 +6,7 @@
       {
         "id": "ncar-menu",
         "label": "NCAR",
-        "rank": 80,
+        "rank": 800,
         "items": [
           {
             "command": "ncar:main",
