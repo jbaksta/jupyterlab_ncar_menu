@@ -21,12 +21,20 @@ const plugin: JupyterFrontEndPlugin<void> = {
     console.log('JupyterLab extension jupyterlab-ncar-menu is activated!');
 
     const { commands } = app;
-
-    // const baseUrl = paths.urls.base;
+    const debug = true;
+    const baseUrl = paths.urls.base;
     const hubHost = paths.urls.hubHost || '';
     const hubPrefix = paths.urls.hubPrefix || '';
     const hubUser = paths.urls.hubUser || '';
-    //const hubServerName = paths.urls.hubServerName || '';
+    const hubServerName = paths.urls.hubServerName || '';
+
+    if (debug) {
+      console.log('baseUrl:' + baseUrl);
+      console.log('hubHost:' + hubHost);
+      console.log('hubPrefix:' + hubPrefix);
+      console.log('hubUser:' + hubUser);
+      console.log('hubServerName:' + hubServerName);
+    }
     
     //var tgtUrl = '';
     var deactivateFlag = false;
@@ -38,7 +46,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       deactivateFlag = true;
     } else {
       // My Servers
-      hubControlPanelUrl = hubHost + URLExt.join(hubPrefix,hubUser,'home');
+      hubControlPanelUrl = hubHost + URLExt.join(hubPrefix,'home');
       console.log('hubControlPanelUrl: ' + hubControlPanelUrl);
     }
 
