@@ -66,6 +66,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       caption: 'My Servers',
       execute: (args: any) => {
         window.open(hubControlPanelUrl);
+        console.log('hubControlPanelUrl: ' + hubControlPanelUrl);
       },
     });
     palette.addItem({command, category, args: { origin: 'from the palette'}})
