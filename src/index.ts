@@ -38,7 +38,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       deactivateFlag = true;
     } else {
       // My Servers
-      hubControlPanelUrl = hubHost + URLExt.join(hubPrefix,hubUser,'home');
+      hubControlPanelUrl = hubHost + URLExt.join(hubPrefix,'home');
     }
 
     if (deactivateFlag) {
