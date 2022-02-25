@@ -27,10 +27,13 @@
             }
           },
           {
+            "type": "separator"
+          },
+          {
             "type": "submenu",
             "submenu": {
               "id": "ncar-pyprojects",
-              "label": "Python Projects",
+              "label": "NCAR Python Projects",
               "items": [
                 {
                   "command": "ncar:empty",
@@ -39,13 +42,16 @@
                   }
                 },
                 {
-                  "command": "ncar:pythia"
+                  "command": "ncar:pythia",
+                  "rank": 0
                 },
                 {
-                  "command": "ncar:geocat"
+                  "command": "ncar:geocat",
+                  "rank": 10
                 },
                 {
-                  "command": "ncar:wrf-python"
+                  "command": "ncar:wrf-python",
+                  "rank": 15
                 }
 
              ]
