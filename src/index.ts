@@ -38,12 +38,13 @@ const plugin: JupyterFrontEndPlugin<void> = {
       deactivateFlag = true;
     } else {
       // My Servers
-      hubControlPanelUrl = hubHost + URLExt.join(hubPrefix,'home');
+      hubControlPanelUrl = hubHost + URLExt.join(hubPrefix,hubUser,'home');
       console.log('hubControlPanelUrl: ' + hubControlPanelUrl);
     }
 
     if (deactivateFlag) {
       console.log('Should deactivate menu and possibly return early as to not register.')
+      return
     }
     
     const category = 'NCAR';
