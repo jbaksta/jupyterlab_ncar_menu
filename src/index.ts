@@ -22,11 +22,17 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     const { commands } = app;
     const debug = true;
+    var deactivateFlag = false;
+
     const baseUrl = paths.urls.base;
     const hubHost = paths.urls.hubHost || '';
     const hubPrefix = paths.urls.hubPrefix || '';
     const hubUser = paths.urls.hubUser || '';
     const hubServerName = paths.urls.hubServerName || '';
+
+    const helpUrl = 'https://arc.ucar.edu/knowledge_base/70549913';
+    const mainUrl = 'https://jupyterhub.hpc.ucar.edu';
+    var hubControlPanelUrl = '';
 
     if (debug) {
       console.log('baseUrl:' + baseUrl);
@@ -36,11 +42,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       console.log('hubServerName:' + hubServerName);
     }
     
-    //var tgtUrl = '';
-    var deactivateFlag = false;
-    const helpUrl = 'https://arc.ucar.edu/knowledge_base/70549913';
-    const mainUrl = 'https://jupyterhub.hpc.ucar.edu';
-    var hubControlPanelUrl = '';
+
 
     if (!hubPrefix) {
       deactivateFlag = true;
