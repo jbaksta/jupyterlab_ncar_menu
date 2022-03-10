@@ -76,7 +76,8 @@ const plugin: JupyterFrontEndPlugin<void> = {
       label: 'My Servers',
       caption: 'My Servers',
       execute: (args: any) => {
-        window.open(hubControlPanelUrl);
+        // window.open(hubControlPanelUrl);
+        window.location.href = hubControlPanelUrl;
         console.log('hubControlPanelUrl: ' + hubControlPanelUrl);
       },
     });
